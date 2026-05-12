@@ -1,65 +1,72 @@
-// // console.log(process.argv)
-// console.log(process.argv[2])
-// console.log(process.argv[3])
+const yargs =require('yargs')
+const {hideBin} = require('yargs/helpers')
+const chalk =require('chalk')
 
+const argv = yargs(hideBin(process.argv))
+    .option('nombre', {
+        alias: 'n',
+        describe: 'Nombre del usuario',
+        demandOption: true,
+        type: 'string'
+    })
+    .option('edad', {
+        alias: 'e',
+        describe: 'Edad del usuario',
+        demandOption: true,
+        type: 'number'
+    })
+    .option('tipo',{
+        alias: 't',
+        describe: 'Tipo de saludo: formal, informal, divertido',
+        choices: ['formal','informal','divertido'],
+        default: 'informal'
+    })
+    .fail((msg, err, yargs) => {
+        if (err) throw err
+        console.log(chalk.red("Erro"),chalk.red(msg))
+        console.log('\nAqui tienes la ayuda: \n')
+        console.log(yargs.help())
 
-// const nombre = process.argv[2]
-// const apellido = process.argv[3]
+        process.exit(1)
+    })
+    .help().argv
 
-// console.log(num1 + num2)
+    function generarSaludo({nombre,edad,tipo}) {
+        let mensaje;
 
-// const opcion = process.argv[2]
+        if (tipo === 'formal') {
+            mensaje = `Buenos dias ${nombre}`
+        } else if (tipo === 'informal') {
+            mensaje = `Hola ${nombre}. como estas?`
+        } else {
+            mensaje = `Wena compa ${nombre}, como va?`
+        }
 
-// if (opcion === 'saludar') {
-//     console.log("Hola a todos")
-// } else if (opcion === 'despedir') {
-//     console.log("chao, nos vemos pronto")
-// } else {
-//     console.log('opcion no valida')
-// }
+        if (edad < 18){
+            mensaje += 'Eres menor de edad'
+        } else if (edad < 50){
+            mensaje += 'Estas en la mejor etapa de tu vida'
+        } else {
+            mensaje += 'Eres una persona con experiencia y sabiduria'
+        }
 
-// const operacion = process.argv[2]
-// const num1 = Number(process.argv[3])
-// const num2 = Number(process.argv[4])
+        switch (tipo) {
+            case 'formal':
+                console.log(chalk.blue(mensaje))
+                break
+            case 'informal':
+                console.log(chalk.green(mensaje))
+                break
+            case 'divertido':
+                console.log(chalk.magenta(mensaje))
+                break
+        }
+    }
 
-// if (operacion === 'sumar') {
-//     console.log(num1+num2)
-// } else if (operacion === 'restar') {
-//     console.log(num1-num2)
-// } else if (operacion === 'multiplicar') {
-//     console.log(num1*num2)
-// } else if (operacion === 'dividir') {
-//     console.log(num1/num2)
-// } else {
-//     console.log('opcion no valida')
-// }
-
-// // arriba opcion mia, abajo opcion profe.
-
-// const operacion = process.argv[2]
-// const num1 = Number(process.argv[3])
-// const num2 = Number(process.argv[4])
-
-// switch(operacion) {
-//     case 'sumar': 
-//         console.log(num1+num2)
-//         break
-//     case 'restar':
-//         console.log(num1-num2)
-//         break
-//     case 'multiplicar':
-//         console.log(num1*num2)
-//         break
-//     case 'dividor':
-//         console.log(num1/num2)
-//         break
-//     default:
-//         console.log('operacion no valida')
-// }
-
-require('dotenv').config()
-
-console.log(process.env.EMAIL_USER)
-console.log(process.env.EMAIL_PASSWORD)
-process.exit()
-console.log(process.cwd())
+    try {
+        generarSaludo(argv)
+    } catch (error) {
+        console.error(chalk.red('Error al generar el saludo: '), error.message)
+        process.exit(1)
+    }
+    
