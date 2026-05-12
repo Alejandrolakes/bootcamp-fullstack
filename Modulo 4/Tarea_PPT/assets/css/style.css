@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 40px;
+  }
+  
+  .contenedor {
+    background: white;
+    max-width: 500px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .botones button {
+    padding: 12px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #007bff;
+    color: white;
+  }
+  
+  .botones button:hover {
+    background: #0056b3;
+  }
+  
+  .resultado, .marcador {
+    margin-top: 20px;
+    font-size: 18px;
+  }

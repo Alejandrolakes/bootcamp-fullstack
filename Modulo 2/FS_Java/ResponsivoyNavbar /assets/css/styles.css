@@ -1,0 +1,103 @@
+/* Estilos base - Mobile First */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.contenedor {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.hero {
+    background-color: #0d6efd;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.hero h1 {
+    margin-bottom: 10px;
+}
+
+.productos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card-producto {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-producto h2 {
+    margin-bottom: 10px;
+}
+
+.contenedor-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.contenido,
+.sidebar {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    background-color: #212529;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .productos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card-producto {
+        width: 48%;
+    }
+
+    .contenedor-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+/* Escritorio */
+@media (min-width: 1024px) {
+    .card-producto {
+        width: 30%;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+}

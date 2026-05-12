@@ -1,0 +1,33 @@
+
+h1 {
+    color: #f66a0c;
+    background-color: #8e1c1c;
+    font-size: 5em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    font-style: italic;
+    text-align: center;
+}
+#titulo1_1{
+    text-align: center;
+    color: red;
+    font-size: 2rem;
+}
+#galeria{
+    color: hsl(16, 80%, 60%);
+    text-decoration-line: overline;
+    text-decoration-line: overline underline;
+    text-align: center;
+    text-transform: lowercase;
+    font-size: 50px;
+    text-shadow: 2px 2px 5px rgb(9, 1, 1);
+}
+p{
+    height: 50px;
+    border: 1px solid black;
+}
+
+footer{
+    color: #b02626;
+    text-align: right;
+}

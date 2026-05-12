@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://images.pexels.com/photos/358457/pexels-photo-358457.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+text-align: center;
+font-size: 3rem;
+}
+
+div {
+    height: 1000px;
+}

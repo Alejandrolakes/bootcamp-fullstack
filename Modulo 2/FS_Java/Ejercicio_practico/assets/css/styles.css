@@ -1,0 +1,64 @@
+body {
+    background-color: lightblue;
+    font-family: Arial;
+}
+
+.productos {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-producto {
+    background: white;
+    margin: 10px;
+    padding: 15px;
+}
+
+.contenedor-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+/* version tablet */
+@media (min-width: 768px) {
+    .productos {
+        flex-direction: row;
+    }
+
+    .card-producto {
+        width: 45%;
+    }
+
+    .contenedor-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+/* version escritorio */
+@media (min-width: 1024px) {
+    .card-producto {
+        width: 30%;
+    }
+}
+
+#btnSubir {
+    position: fixed; /* Lo fija en la pantalla*/
+    bottom: 20px; /* Lo separa 20px de abajo*/
+    right: 20px;  /* Lo separa 20px de la derecha */
+    background-color: #212529;  /* Color de fondo */
+    color: white;  /* Color del icono (flecha)  */
+    border: none;  /* Quita el borde del boton */
+    border-radius: 50%;  /* Lo hace completamente redondo*/
+    width: 55px;  /* Tamaño del boton */
+    height: 55px;
+    cursor: pointer;  /* Cambia el cursos a mano cuando pasa por encima */
+    font-size: 24px; /* mas grande */
+    display: flex;  /*  Activa Flexbox*/
+    justify-content: center;
+    align-items: center;
+}

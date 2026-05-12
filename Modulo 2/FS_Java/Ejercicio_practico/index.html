@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera tienda web</title>
+    <link rel="stylesheet" href="assets/css/styles.css"> <!---->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- aca hago el enlace con bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"> <!-- aqui agregamos las fuentes de los iconos.-->   
+</head>
+<body>
+    <!-- navbar bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mi Tienda</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar"
+                aria-controls="menuNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Bienvenido a mi página web</h1>
+        <p>Esta página fue creada para cumplir con la entrega del módulo 2.</p>
+    </header>
+
+    <section class="productos">
+        <article class="card-producto">
+            <h2>Tienda</h2>
+            <p>Acá se muestran los productos en venta.</p>
+        </article>
+
+        <article class="card-producto">
+            <h2>Ofertas</h2>
+            <p>Encuentra productos destacados y promociones.</p>
+        </article>
+
+        <article class="card-producto">
+            <h2>Novedades</h2>
+            <p>Revisa las últimas novedades de nuestra tienda.</p>
+        </article>
+    </section>
+
+    <main class="contenedor-grid">
+        <section class="contenido">
+            <h2>Contenido principal</h2>
+            <p>
+                En esta sección se presenta la información principal del sitio.
+                Aquí se aplicó CSS Grid para organizar mejor la estructura en pantallas grandes.
+            </p>
+            <img src="assets/img/ciudad.jpg" alt="Imagen de ciudad">
+        </section>
+
+        <aside class="sidebar">
+            <h3>Información adicional</h3>
+            <p>Aquí va un blog de los productos de la tienda.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>© 2026 Mi Página Web Alejandro Lagos - Todos los derechos reservados</p>
+    </footer>
+
+    <!-- bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <button id="btnSubir" onclick="irArriba()">
+        <i class="bi bi-arrow-up-square"></i>
+    </button>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

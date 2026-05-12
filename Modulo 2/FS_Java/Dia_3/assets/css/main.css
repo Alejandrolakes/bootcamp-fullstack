@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: black;
+    padding: 100px 0;
+}
+h1 {
+    color: aliceblue;
+    text-align: center;
+}
+.contenido {
+    background-color: darkgrey;
+    padding: 0 30px;
+}
+.titulo-sobre-mi {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom:  20px;
+}
+.aprendizaje {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif s;
+}

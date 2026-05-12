@@ -1,0 +1,28 @@
+p{
+    color: red;
+    background-color: yellow;
+    font-size: 50px;
+}
+.parrafo-header{ 
+    color: green;
+    background-color: purple;
+/* Aca se uso un selector de clase */
+}
+h1{
+    color: aqua;
+    background-color: beige;
+    font-size: 70px;
+}
+
+/* a continuacion vere ID */
+#parrafo-unico{
+    color: aquamarine;
+    background-color: blue;
+}
+
+.principal{
+    border: 3px solid aqua;
+    color: aqua;
+}
+/* Existen ciertas reglas dentro de CSS */
+/* Regla de la cascada */

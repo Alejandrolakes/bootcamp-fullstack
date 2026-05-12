@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.caja {
+    background-color: aqua;
+    padding: 100px 150px ;
+}
+.block {
+    background-color: blueviolet;
+    width: 700px;
+    height: 100px;
+}
+
+.inline {
+    background-color: brown;
+    width: 700px;
+    height: 100px;
+}
+
+.p-block {
+    display: inline-block; /* Se puede cambiar*/ 
+    background-color: blueviolet;
+    /* width: 700px; */
+    /* height: 100px; */
+    padding: 100px 50px;
+}
+li {
+    display: inline; /* Permite posicionar los atributos en la forma que uno lo necesita */
+}

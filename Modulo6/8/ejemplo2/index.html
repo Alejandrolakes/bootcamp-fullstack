@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajando con NodeMailer</title>
+</head>
+<body>
+    <h1>Enviado correos con NodeMailer</h1>
+    <form action="/enviar" method="GET">
+        <label for="para">Para</label>
+        <input type="text" name="para" id="para">
+        <br><br>
+        <label for="asunto">Asunto</label>
+        <input type="text" name="asunto" id="asunto">
+        <br><br>
+        <label for="contenido">Contenido:</label>
+        <textarea name="contenido" id="contenido" rows="10" cols="100"></textarea>
+        <br><br>
+        <button type="submit">Enviar correo</button>
+    </form>
+</body>
+</html>

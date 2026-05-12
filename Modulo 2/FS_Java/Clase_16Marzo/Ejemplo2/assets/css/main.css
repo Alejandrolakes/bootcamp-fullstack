@@ -1,0 +1,20 @@
+h1{
+    color: blue;
+}
+h1{
+    color: red; 
+}
+/*  Lo que se ve aqui arriba es que prevalece lo ultimo declarado */
+#parrafo-unico{
+    color: blueviolet;
+}
+p{
+    color: red;
+    background-color: blue;
+}
+/* aca gana la regla de la especificidad en las reglas (LA CLASE ES MAS ESPECIFICA QUE LA ETIQUETA) */
+.parrafos {  
+    color: yellow;
+    background-color: blue;
+
+}
