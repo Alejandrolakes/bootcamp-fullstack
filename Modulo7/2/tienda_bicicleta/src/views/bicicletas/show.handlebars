@@ -2,17 +2,17 @@
     <h2 class="text-center my-5">Detalles bicicleta id: {{bicicleta.id}}</h2>
     <div class="d-flex justify-content-center">
         <div class="card mb-5 col-3 shadow">
-            <div class="card-body">
-                <h5 class="card-title"><strong>Marca: </strong>{{bicicleta.marca}}</h5>
+            <div class="card-body text-center">
+                <h5 class="card-title mb-3"><strong>Marca: </strong>{{bicicleta.marca}}</h5>
                 <p class="card-text"><strong>Modelo: </strong>{{bicicleta.modelo}}</p>
                 <p class="card-text"><strong>Tipo: </strong>{{bicicleta.tipo}}</p>
                 <p class="card-text"><strong>Precio: </strong>${{bicicleta.precio}}</p>
-                <p class="card-text"><strong>Disponible: </strong>{{#if bicicleta.disponible}}Si{{else}}No{{/if}}</p>
+                <p class="card-text"><strong>Disponible: </strong>{{#if bicicleta.disponible}}Sí{{else}}No{{/if}}</p>
                 <p class="card-text"><strong>Año: </strong>{{bicicleta.year}}</p>
                 <div class="d-flex gap-2 justify-content-center">
-                    <a href="" class="btn btn-warning btn-sm"></a>
+                    <a href="" class="btn btn-warning btn-sm">Editar</a>
                     <form action="">
-                        <button class="btn btn-danger btn-sm"></button>
+                        <button class="btn btn-danger btn-sm">Eliminar</button>
                     </form>
                 </div>
             </div>
@@ -20,6 +20,5 @@
     </div>
     <div class="text-center">
         <a href="/" class="btn btn-dark">Volver al listado</a>
-
     </div>
 </div>

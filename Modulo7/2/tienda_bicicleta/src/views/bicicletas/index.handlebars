@@ -6,7 +6,7 @@
                 <th>Marca</th>
                 <th>Modelo</th>
                 <th>Año</th>
-                <th>Disponibilidad</th>
+                <th>Disponible</th>
                 <th>Acciones</th>
             </tr>
         </thead>
@@ -16,7 +16,7 @@
                     <td>{{bicicleta.marca}}</td>
                     <td>{{bicicleta.modelo}}</td>
                     <td>{{bicicleta.year}}</td>
-                    <td>{{bicicleta.disponible}}</td>
+                    <td>{{#if bicicleta.disponible}}Sí{{else}}No{{/if}}</td>
                     <td class="d-flex gap-2">
                         <a href="/bicicletas/{{bicicleta.id}}" class="btn btn-primary btn-sm">Detalles</a>
                         <a href="" class="btn btn-warning btn-sm">Editar</a>
@@ -27,6 +27,5 @@
                 </tr>
             {{/each}}
         </tbody>
-
     </table>
 </div>
