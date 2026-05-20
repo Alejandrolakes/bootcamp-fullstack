@@ -1,5 +1,6 @@
 const { DataTypes } = require('sequelize')
-const sequelize = require('../config/db')
+const sequelize = require('../config/db');
+const Categoria = require('./Categoria');
 
 const Producto = sequelize.define("producto", {
     nombre: {
@@ -15,5 +16,7 @@ const Producto = sequelize.define("producto", {
         defaultValue: 0
     }
 })
+
+Producto.hasOne(Categoria, { as: 'CategoriaDestacada'})
 
 module.exports = Producto;
