@@ -1,11 +1,18 @@
 [
     {
-        "id":1,
+        "id": 1,
         "titulo": "Volver al futuro",
         "direccion": "Robert Zemeckis",
         "protagonista": "Michael J. Fox",
         "genero": "Ciencia Ficción",
         "estreno": 1985
-
+    },
+    {
+        "id": 2,
+        "titulo": "Matrix Reloaded",
+        "direccion": "Hermanas Wachowski",
+        "protagonista": "Keanu Reeves",
+        "genero": "Ciencia Ficción",
+        "estreno": 2003
     }
 ]
