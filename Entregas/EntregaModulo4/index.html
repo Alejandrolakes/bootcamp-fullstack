@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Usuarios</title>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        max-width: 600px;
+        margin: 40px auto;
+        padding: 0 20px;
+        }
+        h1 { font-size: 22px; margin-bottom: 8px; }
+        p  { color: #666; font-size: 14px; margin-bottom: 24px; }
+        .btn-group {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        }
+        button {
+        padding: 10px 16px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        background: #f5f5f5;
+        cursor: pointer;
+        text-align: left;
+        }
+        button:hover { background: #e8e8e8; }
+    </style>
+    </head>
+    <body>
+
+    <h1>Administrador de Usuarios</h1>
+    <p>Abre la consola del navegador (F12) para ver los resultados.</p>
+
+    <div class="btn-group">
+        <button onclick="admin.listarNombres()">
+        1. Listar nombres de todos los usuarios
+        </button>
+
+        <button onclick="admin.buscarInfoBasica()">
+        2. Buscar usuario → info básica (username y email)
+        </button>
+
+        <button onclick="admin.buscarDireccion()">
+        3. Buscar usuario → dirección completa
+        </button>
+
+        <button onclick="admin.buscarInfoAvanzada()">
+        4. Buscar usuario → info avanzada (teléfono, web, compañía)
+        </button>
+
+        <button onclick="admin.listarCompanias()">
+        5. Listar todas las compañías con su frase clave
+        </button>
+
+        <button onclick="admin.listarNombresOrdenados()">
+        6. Listar nombres ordenados alfabéticamente
+        </button>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
