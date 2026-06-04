@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Rick & Morty API</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+
+    <h1>Rick & Morty - API REST</h1>
+
+    <div class="botones">
+        <button onclick="obtenerPersonajes()">Obtener Personajes</button>
+        <button onclick="agruparPorEspecie()">Agrupar por Especie</button>
+        <button onclick="mostrarFicha(1)">Ficha de Rick</button>
+    </div>
+
+    <p id="cache-msg" style="display:none; color:green;">
+        Datos cargados desde cache (sin llamar a la API)
+    </p>
+
+    <div id="contenido"></div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
