@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mascotas</title>
+</head>
+<body>
+
+  <h1>Registro de Mascotas</h1>
+
+  <h3>Agregar mascota</h3>
+  <input type="text" id="nombre" placeholder="Nombre">
+  <input type="text" id="rut" placeholder="Rut">
+  <button onclick="agregarMascota()">Agregar</button>
+
+  <h3>Buscar</h3>
+  <input type="text" id="buscarNombre" placeholder="Buscar por nombre">
+  <button onclick="buscarPorNombre()">Buscar nombre</button>
+
+  <input type="text" id="buscarRut" placeholder="Buscar por rut">
+  <button onclick="buscarPorRut()">Buscar rut</button>
+
+  <h3>Eliminar</h3>
+  <input type="text" id="eliminarNombre" placeholder="Eliminar por nombre">
+  <button onclick="eliminarPorNombre()">Eliminar nombre</button>
+
+  <input type="text" id="eliminarRut" placeholder="Eliminar por rut">
+  <button onclick="eliminarPorRut()">Eliminar rut</button>
+
+  <h3>Listado</h3>
+  <button onclick="listarMascotas()">Refrescar lista</button>
+  <ul id="lista"></ul>
+
+  <p id="mensaje"></p>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
